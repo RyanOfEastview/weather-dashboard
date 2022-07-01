@@ -36,99 +36,89 @@
             <div class="search-column col-md-2 p-2 d-flex flex-column justify-content-start">
                 <form class="form-inline my-2 my-lg-0 m-2 row">
                     <input id="search" class="form-control col-9" type="seach" placeholder="Search by City" aria-label="Search">
-                    <button id="search-btn" class="btn btn-outline-danger col-3 my-2 my-sm-0" type="submit"><i class="far fa-sun"></i></button>
+                    <button id="search-btn" class="btn col-3 my-2 my-sm-0" type="submit"><i class="far fa-sun"></i></button>
                 </form>
 
                  <!-- Search history will be a list-->
                 <ul>
                 </ul>
-                <button type="button" id="clear" class="btn btn-outline-danger m-2">Clear history</button>      
+                <button type="button" id="clear" class="btn">Clear history</button>      
             </div>
 
             <!-- Displayed Weather - Main portion of page -->
             <div class="main-weather p-2 col">
                 <div class="container">
                     <!-- Today's Weather -->
-                <div class="report">
-                    <h3>Current Conditions:</h3> <!-- weather icon test --> <i class="wi wi-night-sleet"></i>
-                    
-                    <div class="card">
-                    <div class="card-body row">
-                        <div class="col text-center">
-                        <img id="today-img" class="img-fluid">
+                    <div class="report">
+                        <h3>Current Conditions:</h3> <!-- weather icon test --> <i class="wi wi-night-sleet"></i>
+                        
+                        <div class="card">
+                        <div class="card-body row">
+                            <div class="col text-center">
+                            <img id="today-img" class="img-fluid">
+                            </div>
+                            <div class="col-9 d-flex flex-column justify-content-around">
+                            <h3 id="city"></h3>
+                            <div>Temperature: <span id="temp"></span></div>
+                            <div>Humidity: <span id="humidity"></span></div>
+                            <div>Wind Speed: <span id="wind"></span></div>
+                            <div>UV Index: <span id="uv" class="p-1 rounded"></span></div>
+                            </div>
                         </div>
-                        <div class="col-9 d-flex flex-column justify-content-around">
-                        <h3 id="city"></h3>
-                        <div>Temperature: <span id="temp"></span></div>
-                        <div>Humidity: <span id="humidity"></span></div>
-                        <div>Wind Speed: <span id="wind"></span></div>
-                        <div>UV Index: <span id="uv" class="p-1 rounded"></span></div>
                         </div>
-                    </div>
+
                     </div>
 
-                </div>
-
-            <!-- Five Day Forecast -->
-            <div class="report pt-3">
-                <h3>Five Day Forecast:</h3>
-                <div class="card-deck row">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title" id="day0"></h5>
-                            <img id="img0" class="card-img img-fluid">
-                            <div>Temp: <span id="temp0"></span></div>
-                            <div>Humidity" <span id="humidity0"></span></div>
+                    <!-- Five Day Forecast -->
+                    <div class="report pt-3">
+                        <h3>Five Day Forecast:</h3>
+                        <div class="card-deck row">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title" id="day0"></h5>
+                                    <img id="img0" class="card-img img-fluid">
+                                    <div>Temp: <span id="temp0"></span></div>
+                                    <div>Humidity" <span id="humidity0"></span></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title" id="day1"></h5>
+                                    <img id="img1" class="card-img img-fluid">
+                                    <div>Temp: <span id="temp1"></span></div>
+                                    <div>Humidity" <span id="humidity1"></span></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title" id="day2"></h5>
+                                    <img id="img2" class="card-img img-fluid">
+                                    <div>Temp: <span id="temp2"></span></div>
+                                    <div>Humidity" <span id="humidity2"></span></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title" id="day3"></h5>
+                                    <img id="img3" class="card-img img-fluid">
+                                    <div>Temp: <span id="temp3"></span></div>
+                                    <div>Humidity" <span id="humidity3"></span></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title" id="day4"></h5>
+                                    <img id="img4" class="card-img img-fluid">
+                                    <div>Temp: <span id="temp4"></span></div>
+                                    <div>Humidity" <span id="humidity4"></span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title" id="day1"></h5>
-                            <img id="img1" class="card-img img-fluid">
-                            <div>Temp: <span id="temp1"></span></div>
-                            <div>Humidity" <span id="humidity1"></span></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title" id="day2"></h5>
-                            <img id="img2" class="card-img img-fluid">
-                            <div>Temp: <span id="temp2"></span></div>
-                            <div>Humidity" <span id="humidity2"></span></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title" id="day3"></h5>
-                            <img id="img3" class="card-img img-fluid">
-                            <div>Temp: <span id="temp3"></span></div>
-                            <div>Humidity" <span id="humidity3"></span></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title" id="day4"></h5>
-                            <img id="img4" class="card-img img-fluid">
-                            <div>Temp: <span id="temp4"></span></div>
-                            <div>Humidity" <span id="humidity4"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-            
-            
-            
+                </div>               
             </div>>
-
-            </div>
-
         </div>
-
     </main>
-
-    </div>
 
     <!-- Javascript and momentJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js"></script>
