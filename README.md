@@ -12,6 +12,6 @@ Repository link: https://github.com/RyanOfEastview/weather-dashboard
 
 Deployed application: https://ryanofeastview.github.io/weather-dashboard/
 
-!(./assets/images/screenshot.jpg)
+![]("https://github.com/RyanOfEastview/weather-dashboard/blob/main/assets/images/screenshot.JPG?raw=true")
 
-![screenshot](url "https://github.com/RyanOfEastview/weather-dashboard/blob/main/assets/images/screenshot.JPG")
+<img src="./assets/images/screenshot.jpg" alt="Employee data" title="Employee Data title">
