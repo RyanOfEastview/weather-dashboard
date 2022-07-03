@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <!-- weather icons and font -->
-    <!--  TUTOR!  Need to connect icons to weather report -->
-    <link rel="stylesheet" href="./assets/css/weather-icons.min.css">
-    <link rel="stylesheet" href="./assets/font/weathericons-regular-webfont.svg">
-    
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -40,7 +37,7 @@
                 </form>
 
                  <!-- Search history will be a list-->
-                <ul>
+                <ul id="past-searches" class="list-group p-2">
                 </ul>
                 <button type="button" id="clear" class="btn">Clear history</button>      
             </div>
@@ -50,12 +47,13 @@
                 <div class="container">
                     <!-- Today's Weather -->
                     <div class="report">
-                        <h3>Current Conditions:</h3> <!-- weather icon test --> <i class="wi wi-night-sleet"></i>
+                        <h3>Current Conditions:</h3> 
+                        <!-- weather icon test <i class="wi wi-night-sleet"></i> -->
                         
                         <div class="card">
                         <div class="card-body row">
                             <div class="col text-center">
-                            <img id="today-img" class="img-fluid">
+                            <img id="today-img" class="img-fluid current-image" width="300" height="300"/>
                             </div>
                             <div class="col-9 d-flex flex-column justify-content-around">
                             <h3 id="city"></h3>
@@ -71,52 +69,52 @@
 
                     <!-- Five Day Forecast -->
                     <div class="report pt-3">
-                        <h3>Five Day Forecast:</h3>
+                        <h3>Long Range Forecast:</h3>
                         <div class="card-deck row">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title" id="day0"></h5>
-                                    <img id="img0" class="card-img img-fluid">
+                                <h5 class="card-title" id="day0"></h5>
+                                <img id="img0" class="card-img img-fluid">
                                     <div>Temp: <span id="temp0"></span></div>
-                                    <div>Humidity" <span id="humidity0"></span></div>
+                                    <div>Humidity: <span id="hum0"></span></div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title" id="day1"></h5>
-                                    <img id="img1" class="card-img img-fluid">
+                                <h5 class="card-title" id="day1"></h5>
+                                <img id="img1" class="card-img img-fluid">
                                     <div>Temp: <span id="temp1"></span></div>
-                                    <div>Humidity" <span id="humidity1"></span></div>
+                                    <div>Humidity: <span id="hum1"></span></div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title" id="day2"></h5>
-                                    <img id="img2" class="card-img img-fluid">
+                                <h5 class="card-title" id="day2"></h5>
+                                <img id="img2" class="card-img img-fluid">
                                     <div>Temp: <span id="temp2"></span></div>
-                                    <div>Humidity" <span id="humidity2"></span></div>
+                                    <div>Humidity: <span id="hum2"></span></div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title" id="day3"></h5>
-                                    <img id="img3" class="card-img img-fluid">
+                                <h5 class="card-title" id="day3"></h5>
+                                <img id="img3" class="card-img img-fluid">
                                     <div>Temp: <span id="temp3"></span></div>
-                                    <div>Humidity" <span id="humidity3"></span></div>
+                                    <div>Humidity: <span id="hum3"></span></div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title" id="day4"></h5>
-                                    <img id="img4" class="card-img img-fluid">
+                                <h5 class="card-title" id="day4"></h5>
+                                <img id="img4" class="card-img img-fluid">
                                     <div>Temp: <span id="temp4"></span></div>
-                                    <div>Humidity" <span id="humidity4"></span></div>
+                                    <div>Humidity: <span id="hum4"></span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>               
-            </div>>
+            </div>
         </div>
     </main>
 
