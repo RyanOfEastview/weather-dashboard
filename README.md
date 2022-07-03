@@ -14,4 +14,4 @@ Deployed application: https://ryanofeastview.github.io/weather-dashboard/
 
 !(./assets/images/screenshot.jpg)
 
-![screenshot](https://ryanofeastview.github.io/weather-dashboard/)
+![screenshot](url "https://github.com/RyanOfEastview/weather-dashboard/blob/main/assets/images/screenshot.JPG")
