@@ -10,6 +10,8 @@ The UV index will indicate a colour of severity depening on the UV levels for th
 
 Repository link: https://github.com/RyanOfEastview/weather-dashboard
 
-Deployed application: 
+Deployed application: https://ryanofeastview.github.io/weather-dashboard/
 
 !(./assets/images/screenshot.jpg)
+
+![screenshot](https://ryanofeastview.github.io/weather-dashboard/)
