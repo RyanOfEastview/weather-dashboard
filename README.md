@@ -13,3 +13,5 @@ Repository link: https://github.com/RyanOfEastview/weather-dashboard
 Deployed application: 
 
 !(./assets/images/screenshot.jpg)
+
+https://github.com/RyanOfEastview/weather-dashboard/blob/develop/assets/images/screenshot.JPG
